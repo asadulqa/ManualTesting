@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "d8f3148d-52a7-42b8-a410-897971a394fe",
+		"name": "Evershop.io",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24036687"
+	},
+	"item": [
+		{
+			"name": "Search Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/search?keyword=Nike+react+phantom+run+flyknit+2",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Nike+react+phantom+run+flyknit+2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Addtocart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"qty\": \"5\",\r\n    \"sku\": \"NJC48508-Black-X\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/mine/items?Cookie=sid=s%3AksUdg_XF8MMints_e2nDc-_riVFoGNFs.O30sv2UUEOu0Eno7tSLV%2BM1KBxxE3%2BnCR5bxgkqPCoA",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					],
+					"query": [
+						{
+							"key": "Cookie",
+							"value": "sid=s%3AksUdg_XF8MMints_e2nDc-_riVFoGNFs.O30sv2UUEOu0Eno7tSLV%2BM1KBxxE3%2BnCR5bxgkqPCoA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cartview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/cart?Cookie=sid=s%3AksUdg_XF8MMints_e2nDc-_riVFoGNFs.O30sv2UUEOu0Eno7tSLV%2BM1KBxxE3%2BnCR5bxgkqPCoA",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "Cookie",
+							"value": "sid=s%3AksUdg_XF8MMints_e2nDc-_riVFoGNFs.O30sv2UUEOu0Eno7tSLV%2BM1KBxxE3%2BnCR5bxgkqPCoA"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
